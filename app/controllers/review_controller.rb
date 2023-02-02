@@ -1,5 +1,6 @@
 class ReviewController < ApplicationController
   def create
+    raise
     @review = Review.new(review_params)
     @list = List.find(params[:list_id])
     @review.list = @list
